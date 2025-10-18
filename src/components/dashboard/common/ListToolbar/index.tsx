@@ -94,6 +94,7 @@ const ListToolbar = React.forwardRef<ListToolbarRef, ListToolbarProps>(
     },
     ref,
   ) => {
+    console.log(resultCount);
     const inputRef = useRef<HTMLInputElement | null>(null);
     const statusWrapRef = useRef<HTMLDivElement | null>(null);
     const [localSearch, setLocalSearch] = useState(search);
